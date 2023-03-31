@@ -11,7 +11,7 @@ sidenav:
   debug: false
 oscal:
     type: "branch"
-    remote: "ImportantFederalAgencyTest/OSCAL"
+    remote: "Compton-NIST/NOTREALOSCAL"
     branch: "main"
     revision: "latest"
     version: ""
