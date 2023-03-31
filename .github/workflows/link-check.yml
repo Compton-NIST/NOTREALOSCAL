@@ -1,8 +1,8 @@
 name: Link Check
 
 on:
-  schedule:
-    - cron: "00 8 * * *" # 0800 UTC is 0400 AM EDT
+  # schedule:
+  #   - cron: "00 8 * * *" # 0800 UTC is 0400 AM EDT
   repository_dispatch:
   workflow_dispatch:
     inputs:
