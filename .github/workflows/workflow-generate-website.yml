@@ -162,7 +162,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
       if: github.event_name == 'push' && inputs.commit_resources == true && github.ref_name == 'main'
       with:
-        github_token: ${{ secrets.access_token }}
+        personal_token: ${{ secrets.access_token }}
         enable_jekyll: false
         publish_dir: ./docs/public
         publish_branch: nist-pages
@@ -171,7 +171,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305
       if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_resources == 'true' && github.ref_name == 'main'
       with:
-        github_token: ${{ secrets.COMMIT_TOKEN }}
+        personal_token: ${{ secrets.COMMIT_TOKEN }}
         enable_jekyll: false
         publish_dir: ./docs/public
         publish_branch: nist-pages
